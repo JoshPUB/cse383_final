@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>CSE383 Final-Directions hilljd4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Start of Reference Sheets Linking. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- End of Reference Sheets Linking. -->
+  </head>
+
+  <body>
+    <!-- Script of Reference Sheets Linking. -->
+ 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- End of  Script Reference Sheets Linking. -->
+
+    <!-- Start of Nav Bar. -->
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="https://ceclnx01.cec.miamioh.edu/~hilljd4/cse383/final/index.html">CSE383</a>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://ceclnx01.cec.miamioh.edu/~hilljd4/cse383/final/index.html">Landing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ceclnx01.cec.miamioh.edu/~hilljd4/cse383/final/directions.html">Directions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Directions History and Search</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of Nav Bar. -->
+
+    <!-- First Image Box. -->
+    <div class="bgimg-2">
+      <div class="caption">
+        <span class="border">Directions</span>
+      </div>
+    </div>
+
+    <!-- FirstText Box. -->
+    <div class=pageBreaker>
+
+      <h2>Enter Search Details Here</h2>
+      <!-- <form action="/action_page.php" method="get"> 
+<form action="https://www.youtube.com/watch?v=sL2fbDv8nKs" method="post" target="_blank">
+-->
+      <form>
+        <!-- Container -->
+        <div class="container">
+
+          <div class="row">
+
+            <!-- Starting Address -->
+            <div class="col">
+              <label for="Origin">Starting Address:</label>
+              <input type="text" class="form-control" id="Origin" placeholder="Starbucks on Eigth" required>
+            </div>
+
+
+          </div>
+          <!-- End of Row -->
+
+          <!-- Row -->
+          <div class="row">
+
+            <!-- Ending Address -->
+            <div class="col">
+              <label for="Destination">Destination Address:</label>
+              <input type="text" class="form-control" id="Destination" placeholder="Dan Flashes at Shops at the Creek" required>
+            </div>
+
+          </div>
+          <!-- End of Row -->
+
+          <!-- Row -->
+          <div class="row">
+
+            <div class="col">
+              <div class="radioTitle">Mode of Travel:</div>
+              <div id="radios">
+
+                <label for="Car" class="material-icons">
+                  <input type="radio" name="radio" id="Car" value="car" checked />
+                  <span>directions_car</span>
+                </label>
+
+                <label for="Bicycle" class="material-icons">
+                  <input type="radio" name="radio" id="Bicycle" value="bicycle" />
+                  <span>directions_bike</span>
+                </label>
+
+                <label for="Truck" class="material-icons">
+                  <input type="radio" name="radio" id="Truck" value="truck" />
+                  <span>local_shipping</span>
+                </label>
+
+                <label for="Taxi" class="material-icons">
+                  <input type="radio" name="radio" id="Taxi" value="taxi" />
+                  <span>local_taxi</span>
+                </label>
+
+                <label for="Bus" class="material-icons">
+                  <input type="radio" name="radio" id="Bus" value="bus" />
+                  <span>directions_bus</span>
+                </label>
+
+                <label for="Van" class="material-icons">
+                  <input type="radio" name="radio" id="Van" value="van" />
+                  <span>airport_shuttle</span>
+                </label>
+
+                <label for="Motorcycle" class="material-icons">
+                  <input type="radio" name="radio" id="Motorcycle" value="motorcycle" />
+                  <span>motorcycle</span>
+                </label>
+
+                <label for="Pedestrian" class="material-icons">
+                  <input type="radio" name="radio" id="Pedestrian" value="pedestrian" />
+                  <span>directions_walk</span>
+                </label>
+
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- End of Row -->
+
+          <!-- Row -->
+          <div class="row">
+
+            <div class="col">
+              <div class=selectBoxes>
+                <label for="route-type"> Route Type </label><br>
+                <select id="route-type" name="route-type" required>
+                  <option value="fastest">Fastest</option>
+                  <option value="shortest">Shortest</option>
+                  <option value="eco">Eco</option>
+                  <option value="thrilling">Thrilling</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Can only be entered if route type = thrilling-->
+            <div class="col">
+              <div class=selectBoxes>
+                <label for="hilliness"> Hilliness </label><br>
+                <select class="form-select" id="hilliness" name="hilliness" required>
+                  <option value="low">Low</option>
+                  <option value="normal">Normal</option>
+                  <option value="high">High</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+          <!-- End of Row -->
+
+        </div>
+        <!-- End of Container -->
+
+        <button onclick="main(); return false;" class="button"><span>Go</span></button>
+
+      </form>
+    </div>
+
+    <!-- Return Directions Here -->
+
+    <!-- First Image Box. -->
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border">Direction Results</span>
+      </div>
+    </div>
+
+    <!-- FirstText Box. -->
+    <div class=pageBreaker>
+	<h1> Directions </h1>
+ <table class='table'>
+          
+            <tbody id='output'>
+            </tbody>
+          </table>
+
+    </div>
+
+  </body>
+
+</html>
+
